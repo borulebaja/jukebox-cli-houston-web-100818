@@ -12,6 +12,6 @@ songs = [
 
 def list(songs)
   array = []
-  array.each_with_index do |index|
-    
+  array.each_with_index do |item, index|
+  puts #{index} #{songs}  
 end 
