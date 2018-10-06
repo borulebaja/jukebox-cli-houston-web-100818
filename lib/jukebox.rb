@@ -27,7 +27,7 @@ def play(songs)
   puts "Please enter a song name or number:"
   users_response = get.chomp
   songs.each_with_index do |song, i|
-  if users_response == song name
+  if users_response.to_i == i
     puts "Playing <song name>"
   elsif 
     puts "Invalid input, please try again"
