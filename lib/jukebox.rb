@@ -26,7 +26,6 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   users_response = get.chomp
-  songs.each_with_index
   if users_response == song name
     puts "Playing <song name>"
   elsif 
