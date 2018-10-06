@@ -30,7 +30,7 @@ def play(songs)
   if users_response == song name
     puts "Playing <song name>"
   elsif 
-    puts 
+    puts "Invalid input, please try again"
 end
 
 
