@@ -28,9 +28,13 @@ def play(songs)
   users_response = get.chomp
   songs.each_with_index do |song, i|
   if users_response.to_i == i
-    puts "Playing <song name>"
-  elsif 
+    puts "playing #{songs[i-1]}"
+  elsif users_response == song 
+  puts "playing #{song[i]}"
+  else 
     puts "Invalid input, please try again"
+  end 
+ end 
 end
 
 
