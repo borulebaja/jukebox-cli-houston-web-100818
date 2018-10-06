@@ -32,12 +32,13 @@ def play(songs)
     end
       }
   if user_response == "list"
-    list(my_songs)
-    play(my_songs)
+    list(songs)
+    play(songs)
   else
     puts "Invalid input, please try again:"
-    play(my_songs)
+    play(songs)
   end
+end
 
 def exit_jukebox
   puts "Goodbye"
