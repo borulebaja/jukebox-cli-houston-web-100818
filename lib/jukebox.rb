@@ -24,6 +24,15 @@ def list(songs)
 end 
 
 def play(songs)
-  puts 
+  puts "Please enter a song name or number:"
+  users_response = get.chomp
+  songs.each_with_index
+  if users_response == song name
+    puts 
 end
+
+
+
+
+
 
