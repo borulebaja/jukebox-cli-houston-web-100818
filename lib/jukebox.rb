@@ -28,6 +28,8 @@ def play(songs)
   users_response = get.chomp
   songs.each_with_index
   if users_response == song name
+    puts "Playing <song name>"
+  elsif 
     puts 
 end
 
