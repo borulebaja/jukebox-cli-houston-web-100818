@@ -41,7 +41,6 @@ def play(my_songs)
     play(my_songs)
   end
 end	
-end
 
 
 
