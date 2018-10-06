@@ -37,7 +37,6 @@ end
       puts "Now Playing: #{input}"
     end
   end
-end
 
 
 def exit_jukebox
