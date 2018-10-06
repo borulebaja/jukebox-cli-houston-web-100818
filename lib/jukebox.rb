@@ -69,7 +69,7 @@ def run(my_songs)
         user_response = gets.chomp
       end
     end
-
+end
 
 
 
