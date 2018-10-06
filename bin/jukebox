@@ -14,6 +14,7 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-
+ukebox = Jukebox.new(songs)
+player.call	jukebox.call
 
 run(songs)
