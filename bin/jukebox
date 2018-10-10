@@ -14,7 +14,7 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
-jukebox = Jukebox.new(songs)
-jukebox.call
+# jukebox = Jukebox.new(songs)
+# jukebox.call
 
 run(songs)

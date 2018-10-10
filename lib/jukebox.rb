@@ -1,3 +1,4 @@
+require 'pry'
 songs = [
   "Phoenix - 1901",
   "Tokyo Police Club - Wait Up",
@@ -20,28 +21,32 @@ end
 
 def list(songs)
   songs.each_with_index do |item, index|
-  puts "#{index+1}.#{item}" 
-end 
-
+    puts "#{index+1}.#{item}" 
+  end 
+end
 
 def play(songs)
   puts "Please enter a song name or number:"
   user_request = gets.chomp
+  valid = false
   songs.each_with_index do |song, i|
     if user_request.to_i == i
-    puts "playing #{songs[i-1]}"
-  elsif user_request == song 
-  puts "playing #{song[i]}"
-else puts "Invalid input, please try again"
+      valid = true
+      puts "playing #{songs[i-1]}"
+    elsif user_request == song 
+      valid = true
+      puts "playing #{song[i]}"
+    end
+  end
+  if !valid
+    puts "Invalid input, please try again"
   end 
-end 
-end 
+end  
 
 
 def exit_jukebox
   puts "Goodbye"
- end 
-end
+end 
 
 def run(songs)
   help
@@ -68,7 +73,6 @@ def run(songs)
   end
   exit_jukebox
 end 
-
 
 
 
